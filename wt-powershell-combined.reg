@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtps]
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+@="Open Windows Terminal Power&Shell here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtps\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%V\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtps]
+@="Open in Windows Terminal Power&Shell"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtps\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtps]
+@="Open Windows Terminal Power&Shell at file location"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtps\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%w\""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtpsad]
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe,1"
+@="Open Admin Windows Terminal Power&Shell here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtpsad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Windows PowerShell\"\"\"','-d','\"\"\"%V\"\"\"')\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtpsad]
+@="Open in Admin Windows Terminal Power&Shell"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe,1"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtpsad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Windows PowerShell\"\"\"','-d','\"\"\"%1\"\"\"')\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtpsad]
+@="Open Admin Windows Terminal Power&Shell at file location"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe,1"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtpsad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Windows PowerShell\"\"\"','-d','\"\"\"%w\"\"\"')\""
+"NoWorkingDirectory"=""

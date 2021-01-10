@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswt]
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+@="Open Windows &Terminal Command Prompt here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswt\command]
+@="cmd.exe /c start wt.exe -p \"Command Prompt\" -d \"%V\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswt]
+@="Open in Windows &Terminal Command Prompt"
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswt\command]
+@="cmd.exe /c start wt.exe -p \"Command Prompt\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswt]
+@="Open Windows &Terminal Command Prompt at file location"
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswt\command]
+@="cmd.exe /c start wt.exe -p \"Command Prompt\" -d \"%w\""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtad]
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+@="Open Admin Windows &Terminal Command Prompt here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Command Prompt\"\"\"','-d','\"\"\"%V\"\"\"')\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtad]
+@="Open in Admin Windows &Terminal Command Prompt"
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Command Prompt\"\"\"','-d','\"\"\"%1\"\"\"')\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtad]
+@="Open Admin Windows &Terminal Command Prompt at file location"
+"Icon"="%localappdata%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\terminal.ico"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Command Prompt\"\"\"','-d','\"\"\"%w\"\"\"')\""
+"NoWorkingDirectory"=""

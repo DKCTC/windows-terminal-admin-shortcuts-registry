@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtub]
+"Icon"="%windir%\\System32\\wsl.exe"
+@="Open Windows Terminal &Ubuntu Bash here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtub\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu\" -d \"%V\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtub]
+@="Open in Windows Terminal &Ubuntu Bash"
+"Icon"="%windir%\\System32\\wsl.exe"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtub\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtub]
+@="Open Windows Terminal &Ubuntu Bash at file location"
+"Icon"="%windir%\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtub\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu\" -d \"%w\""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtubad]
+"Icon"="%windir%\\System32\\wsl.exe"
+@="Open Admin Windows Terminal &Ubuntu Bash here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtubad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Ubuntu\"\"\"','-d','\"\"\"%V\"\"\"')\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtubad]
+@="Open in Admin Windows Terminal &Ubuntu Bash"
+"Icon"="%windir%\\System32\\wsl.exe"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtubad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Ubuntu\"\"\"','-d','\"\"\"%1\"\"\"')\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtubad]
+@="Open Admin Windows Terminal &Ubuntu Bash at file location"
+"Icon"="%windir%\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtubad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Ubuntu\"\"\"','-d','\"\"\"%w\"\"\"')\""
+"NoWorkingDirectory"=""
