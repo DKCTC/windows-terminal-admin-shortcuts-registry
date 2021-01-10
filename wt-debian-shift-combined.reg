@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtdb]
+"Icon"="%windir%\\System32\\wsl.exe"
+@="Open Windows Terminal &Debian Bash here"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtdb\command]
+@="cmd.exe /c start wt.exe -p \"Debian\" -d \"%V\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtdb]
+@="Open in Windows Terminal &Debian Bash"
+"Icon"="%windir%\\System32\\wsl.exe"
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtdb\command]
+@="cmd.exe /c start wt.exe -p \"Debian\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtdb]
+@="Open Windows Terminal &Debian Bash at file location"
+"Icon"="%windir%\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtdb\command]
+@="cmd.exe /c start wt.exe -p \"Debian\" -d \"%w\""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtdbad]
+"Icon"="%windir%\\System32\\wsl.exe"
+@="Open Admin Windows Terminal &Debian Bash here"
+"Extended"=""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\1runaswtdbad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Debian\"\"\"','-d','\"\"\"%V\"\"\"')\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtdbad]
+@="Open in Admin Windows Terminal &Debian Bash"
+"Icon"="%windir%\\System32\\wsl.exe"
+"Extended"=""
+"NoWorkingDirectory"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\1runaswtdbad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Debian\"\"\"','-d','\"\"\"%1\"\"\"')\""
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtdbad]
+@="Open Admin Windows Terminal &Debian Bash at file location"
+"Icon"="%windir%\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\1runaswtdbad\command]
+@="powershell.exe -WindowStyle Hidden \"Start-Process -Verb RunAs cmd.exe -ArgumentList @('/c','start wt.exe','-p','\"\"\"Debian\"\"\"','-d','\"\"\"%w\"\"\"')\""
+"Extended"=""
+"NoWorkingDirectory"=""
