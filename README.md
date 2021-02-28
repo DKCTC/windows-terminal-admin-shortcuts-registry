@@ -23,3 +23,5 @@ Ubuntu and Debian both use the WSL Tux icon because there are no consistent path
 **KNOWN ISSUE:** When trying to open a Windows Terminal instance on the root folder of a drive, instead of opening the root folder, it will open the user profile folder. I will update this if I ever find a fix. I am sure that there is some PowerShell scripting that can be put together to handle this situation, and that the command would still be one long line.
 
 If anything besides that isn't working, please create an Issue.
+
+**YOU WILL BE MODIFYING YOUR WINDOWS REGISTRY AT YOUR OWN RISK! I AM NOT RESPONSIBLE FOR ANYTHING THAT YOU DO TO YOUR WINDOWS REGISTRY THAT CAUSES ISSUES WITH YOUR COMPUTER! IF YOU ARE NOT COMFORTABLE WITH MODIFYING YOUR WINDOWS REGISTRY, DO NOT MODIFY IT, AND DO NOT USE THESE FILES!**
