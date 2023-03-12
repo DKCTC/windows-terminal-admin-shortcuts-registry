@@ -5,8 +5,8 @@ Includes files for adding both regular and elevated options to the same menu, or
 
 These items are thoroughly documented at the links below:
 
-https://dkcool.tailnet.net/2019/05/add-open-windows-terminal-command-prompt-to-the-explorer-context-menu-in-windows-10/
-https://dkcool.tailnet.net/2019/05/add-open-admin-command-prompt-to-the-explorer-context-menu-in-windows-10/
+https://dkcool.io/2019/05/add-open-windows-terminal-command-prompt-to-the-explorer-context-menu-in-windows-10/
+https://dkcool.io/2019/05/add-open-admin-command-prompt-to-the-explorer-context-menu-in-windows-10/
 
 If you don't bother going there to read the articles, then make sure that you download the **terminal.ico** file and place it in the folder below AFTER installing Windows Terminal from the Microsoft Store:
 
